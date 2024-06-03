@@ -38,6 +38,94 @@ func exit(){
 	
 }
 
+func header(judul string){
+	if judul =="penghuni"{
+		fmt.Printf("%25s.___                      __    __________                      .__                 .__ \n", "")
+		fmt.Printf("%25s|   | ____ ______  __ ___/  |_  \\______   \\ ____   ____    ____ |  |__  __ __  ____ |__|\n", "")
+		fmt.Printf("%25s|   |/    \\____ \\|  |  \\   __\\  |     ___// __ \\ /    \\  / ___\\|  |  \\|  |  \\/    \\|  |\n", "")
+		fmt.Printf("%25s|   |   |  \\  |_> >  |  /|  |    |    |   \\  ___/|   |  \\/ /_/  >   Y  \\  |  /   |  \\  |\n", "")
+		fmt.Printf("%25s|___|___|  /   __/|____/ |__|    |____|    \\___  >___|  /\\___  /|___|  /____/|___|  /__|\n", "")
+		fmt.Printf("%25s         \\/|__|                                \\/     \\//_____/      \\/           \\/    \n", "")
+	}else if judul=="kamar"{
+		fmt.Printf("%25s.___                      __     ____  __.                            \n", "")
+		fmt.Printf("%25s|   | ____ ______  __ ___/  |_  |    |/ _|____    _____ _____ _______ \n", "")
+		fmt.Printf("%25s|   |/    \\____ \\|  |  \\   __\\ |      < \\__  \\  /     \\__  \\_  __ \\ \n", "")
+		fmt.Printf("%25s|   |   |  \\  |_> >  |  /|  |   |    |  \\ / __ \\|  Y Y  \\/ __ \\|  | \\/\n", "")
+		fmt.Printf("%25s|___|___|  /   __/|____/ |__|   |____|__ (____  /__|_|  (____  /__|   \n", "")
+		fmt.Printf("%25s         \\/|__|                         \\/    \\/      \\/     \\/     \n", "")
+		
+	}else if judul=="carikamar"{
+		fmt.Printf("%25s__________                                  .__                 ____  __.                            \n", "")
+		fmt.Printf("%25s\\______   \\ ____   ____   ____ _____ _______|__|____    ____   |    |/ _|____    _____ _____ _______ \n", "")
+		fmt.Printf("%25s |     ___// __ \\ /    \\_/ ___\\__  \\_  __ \\  \\__  \\  /    \\  |      < \\__  \\  /     \\__  \\_  __ \\\n", "")
+		fmt.Printf("%25s |    |   \\  ___/|   |  \\  \\___ / __ \\|  | \\/  |/ __ \\|   |  \\ |    |  \\ / __ \\|  Y Y  \\/ __ \\|  | \\\n", "")
+		fmt.Printf("%25s |____|    \\___  >___|  /\\___  >____  /__|  |__(____  /___|  / |____|__ (____  /__|_|  (____  /__|   \n", "")
+		fmt.Printf("%25s               \\/     \\/     \\/     \\/              \\/     \\/          \\/    \\/      \\/     \\/       \n", "")
+
+	}else if judul=="editkamar"{
+		fmt.Printf("%25s___________    .___.__  __     ____  __.                            \n", "")
+		fmt.Printf("%25s\\_   _____/  __| _/|__|/  |_  |    |/ _|____    _____ _____ _______ \n", "")
+		fmt.Printf("%25s |    __)_  / __ | |  \\   __\\ |      < \\__  \\  /     \\\\__  \\\\_  __ \\\n", "")
+		fmt.Printf("%25s |        \\/ /_/ | |  ||  |   |    |  \\ / __ \\|  Y Y  \\/ __ \\|  | \\/\n", "")
+		fmt.Printf("%25s/_______  /\\____ | |__||__|   |____|__ (____  /__|_|  (____  /__|   \n", "")
+		fmt.Printf("%25s        \\/      \\/                    \\/    \\/      \\/     \\/     \n", "")
+
+	}else if judul=="caripenghuni"{
+		fmt.Printf("%25s_________              .__  __________                      .__                 .__ \n", "")
+		fmt.Printf("%25s\\_   ___ \\_____ _______|__| \\______   \\ ____   ____    ____ |  |__  __ __  ____ |__|\n", "")
+		fmt.Printf("%25s/    \\  \\/\\__  \\\\_  __ \\  |  |     ___// __ \\ /    \\  / ___\\|  |  \\|  |  \\/    \\|  |\n", "")
+		fmt.Printf("%25s\\     \\____/ __ \\|  | \\/  |  |    |   \\  ___/|   |  \\/ /_/  >   Y  \\  |  /   |  \\  |\n", "")
+		fmt.Printf("%25s \\______  (____  /__|  |__|  |____|    \\___  >___|  /\\___  /|___|  /____/|___|  /__|\n", "")
+		fmt.Printf("%25s        \\/     \\/                          \\/     \\//_____/      \\/           \\/    \n", "")
+
+	}else if judul == "hapuskamar"{
+		fmt.Printf("%25s  ___ ___                               ____  __.\n", "")
+		fmt.Printf("%25s /   |   \\_____  ______  __ __  ______ |    |/ _|____    _____ _____ _______ \n", "")
+		fmt.Printf("%25s/    ~    \\__  \\ \\____ \\|  |  \\/  ___/ |      < \\__  \\  /     \\\\__  \\\\ _  __ \\\n", "")
+		fmt.Printf("%25s\\    Y    // __ \\|  |_> >  |  /\\___ \\  |    |  \\ / __ \\|  Y Y  \\\\/ __ \\|  | \\\n", "")
+		fmt.Printf("%25s \\___|_  /(____  /   __/|____//____  > |____|__ (____  /__|_|  (____  /__|   \n", "")
+		fmt.Printf("%25s       \\/      \\/|__|              \\/          \\/    \\/      \\/     \\/     \n", "")
+
+
+	}else if judul=="hapuspenghuni"{
+		fmt.Printf("%25s ___ ___                              __________                      .__                 .__ \n", "")
+		fmt.Printf("%25s/   |   \\_____  ______  __ __  ______ \\______   \\ ____   ____    ____ |  |__  __ __  ____ |__|\n", "")
+		fmt.Printf("%25s/    ~    \\__  \\ \\____ \\|  |  \\/  ___/  |     ___// __ \\ /    \\  / ___\\|  |  \\|  |  \\/    \\|  |\n", "")
+		fmt.Printf("%25s\\    Y    // __ \\|  |_> >  |  /\\___ \\   |    |   \\  ___/|   |  \\/ /_/  >   Y  \\  |  /   |  \\  |\n", "")
+		fmt.Printf("%25s \\___|_  /(____  /   __/|____//____  >  |____|    \\___  >___|  /\\___  /|___|  /____/|___|  /__|\n", "")
+		fmt.Printf("%25s       \\/      \\/|__|              \\/                 \\/     \\//_____/      \\/           \\/    \n", "")
+
+
+	}else if judul =="tampilpenghuni"{
+		fmt.Printf("%-25s___________                     .__.__   __                   __________                      .__                 .__ \n", "")
+		fmt.Printf("%-25s\\__    ___/____    _____ ______ |__|  | |  | ______    ____   \\______   \\ ____   ____    ____ |  |__  __ __  ____ |__|\n", "")
+		fmt.Printf("%-25s  |    |  \\__  \\  /     \\\\____ \\|  |  | |  |/ |__  \\  /    \\   |     ___// __ \\ /    \\  / ___\\|  |  \\|  |  \\/    \\|  |\n", "")
+		fmt.Printf("%-25s  |    |   / __ \\|  Y Y  \\  |_> >  |  |_|    < / __ \\|   |  \\  |    |   \\  ___/|   |  \\/ /_/  >   Y  \\  |  /   |  \\  |\n", "")
+		fmt.Printf("%-25s  |____|  (____  /__|_|  /   __/|__|____/__|_ (____  /___|  /  |____|    \\___  >___|  /\\___  /|___|  /____/|___|  /__|\n", "")
+		fmt.Printf("%-25s               \\/      \\/|__|                \\/    \\/     \\/                 \\/     \\//_____/      \\/           \\/    \n", "")
+
+
+	}else if judul=="tampilkamar"{
+		fmt.Printf("%-25s___________                     .__.__   __                    ____  __.                            \n", "")
+		fmt.Printf("%-25s\\__    ___/____    _____ ______ |__|  | |  | ______    ____   |    |/ _|____    _____ _____ _______ \n", "")
+		fmt.Printf("%-25s  |    |  \\__  \\  /     \\\\____ \\|  |  | |  |/ |__  \\  /    \\  |      < \\__  \\  /     \\\\__  \\_  __ \\ \n", "")
+		fmt.Printf("%-25s  |    |   / __ \\|  Y Y  \\  |_> >  |  |_|    < / __ \\|   |  \\ |    |  \\ / __ \\|  Y Y  \\/ __ \\|  | \\/\n", "")
+		fmt.Printf("%-25s  |____|  (____  /__|_|  /   __/|__|____/__|_ (____  /___|  / |____|__ (____  /__|_|  (____  /__|   \n", "")
+		fmt.Printf("%-25s               \\/      \\/|__|                \\/    \\/     \\/          \\/    \\/      \\/     \\/       \n", "")
+
+	}else if judul == "editpenghuni"{
+		fmt.Printf("%-25s___________    .___.__  __    __________                      .__                 .__ \n", "")
+		fmt.Printf("%-25s\\_   _____/  __| _/|__|/  |_  \\______   \\ ____   ____    ____ |  |__  __ __  ____ |__|\n", "")
+		fmt.Printf("%-25s |    __)_  / __ | |  \\   __\\  |     ___// __ \\ /    \\  / ___\\|  |  \\|  |  \\/    \\|  |\n", "")
+		fmt.Printf("%-25s |        \\/ /_/ | |  ||  |    |    |   \\  ___/|   |  \\/ /_/  >   Y  \\  |  /   |  \\  |\n", "")
+		fmt.Printf("%-25s/_______  /\\____ | |__||__|    |____|    \\___  >___|  /\\___  /|___|  /____/|___|  /__|\n", "")
+		fmt.Printf("%-25s        \\/      \\/                           \\/     \\//_____/      \\/           \\/    \n", "")
+
+
+	}
+}
+
+
 const NMAX = 100
 
 type Penghuni struct {
@@ -143,6 +231,8 @@ func menu() {
 			pembayaran()
 			tampilkanpembayaran=true
 		case 12:
+			clearScreen()
+			setGreenText()
 			fmt.Println("Terima kasih. Sampai jumpa!")
 			return
 		default:
@@ -153,80 +243,76 @@ func menu() {
 
 func pendataanPenghuni() {
 	clearScreen()
-	setGreenText()
-	fmt.Printf("%25s /$$$$$$                                 /$$           /$$$$$$$              /$$                     /$$$$$$$                               /$$                           /$$      \n", "")
-	fmt.Printf("%25s|_  $$_/                                | $$          | $$__  $$            | $$                    | $$__  $$                             | $$                          |__/      \n", "")
-	fmt.Printf("%25s  | $$   /$$$$$$$   /$$$$$$  /$$   /$$ /$$$$$$        | $$  \\ $$  /$$$$$$  /$$$$$$    /$$$$$$       | $$  \\ $$ /$$$$$$  /$$$$$$$   /$$$$$$ | $$$$$$$  /$$   /$$ /$$$$$$$  /$$      \n", "")
-	fmt.Printf("%25s  | $$  | $$__  $$ /$$__  $$| $$  | $$|_  $$_/        | $$  | $$ |____  $$|_  $$_/   |____  $$      | $$$$$$$//$$__  $$| $$__  $$ /$$__  $$| $$__  $$| $$  | $$| $$__  $$| $$      \n", "")
-	fmt.Printf("%25s  | $$  | $$  \\ $$| $$  \\ $$| $$  | $$  | $$          | $$  | $$  /$$$$$$$  | $$      /$$$$$$$      | $$____/| $$$$$$$$| $$  \\ $$| $$  \\ $$| $$  \\ $$| $$  | $$| $$  \\ $$| $$      \n", "")
-	fmt.Printf("%25s  | $$  | $$  | $$| $$  | $$| $$  | $$  | $$ /$$      | $$  | $$ /$$__  $$  | $$ /$$ /$$__  $$      | $$     | $$_____/| $$  | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$| $$      \n", "")
-	fmt.Printf("%25s /$$$$$$| $$  | $$| $$$$$$$/|  $$$$$$/  |  $$$$/      | $$$$$$$/|  $$$$$$$  |  $$$$/|  $$$$$$$      | $$     |  $$$$$$$| $$  | $$|  $$$$$$$| $$  | $$|  $$$$$$/| $$  | $$| $$      \n", "")
-	fmt.Printf("%25s|______/|__/  |__/| $$____/  \\______/    \\___/        |_______/  \\_______/   \\___/   \\_______/      |__/      \\_______/|__/  |__/ \\____  $$|__/  |__/ \\______/ |__/  |__/|__/      \n", "")
-	fmt.Printf("%25s                  | $$                                                                                                            /$$  \\ $$                                        \n", "")
-	fmt.Printf("%25s                  | $$                                                                                                           |  $$$$$$/                                         \n", "")
-	fmt.Printf("%25s                  |__/                                                                                                            \\______/                                         \n", "")
+    setGreenText()
+    header("penghuni")
+
+    var penghuniBaru Penghuni
+	var namaDepanpenghuni string
+	var namaBelakangpenghuni string
 	
+	var namaPenghuni string
+  
 
+	namaDepanpenghuni=" "
+	namaBelakangpenghuni=" "
+	fmt.Printf("%25sMasukkan nama depan penghuni :", "")
+    fmt.Scan(&namaDepanpenghuni)
+	fmt.Printf("%25sMasukkan nama belakang penghuni :", "")
+    fmt.Scan(&namaBelakangpenghuni)
+	namaPenghuni=namaDepanpenghuni+" "+namaBelakangpenghuni
+   	penghuniBaru.Nama=namaPenghuni
 
+    fmt.Printf("%25sMasukkan nomor kamar penghuni:", "")
+    fmt.Scan(&penghuniBaru.NomorKamar)
+    if !cekKetersediaanKamar(penghuniBaru.NomorKamar) {
+        fmt.Printf("%25sKamar tidak tersedia. Silakan pilih kamar lain.\n", "")
+        return
+    }
 
-	var penghuniBaru Penghuni
-	fmt.Printf("%25sMasukkan nama penghuni:", "")
-	fmt.Scan(&penghuniBaru.Nama)
-	fmt.Printf("%25sMasukkan nomor kamar penghuni:", "")
-	fmt.Scan(&penghuniBaru.NomorKamar)
-	if !cekKetersediaanKamar(penghuniBaru.NomorKamar) {
-		fmt.Printf("%25sKamar tidak tersedia. Silakan pilih kamar lain.\n", "")
-		return
-	}
-	fmt.Printf("%25sMasukkan nomor identitas penghuni:", "")
-	fmt.Scan(&penghuniBaru.NomorIdentitas)
-	fmt.Printf("%25sMasukkan nomor telepon penghuni:", "")
-	fmt.Scan(&penghuniBaru.NomorTelepon)
-	fmt.Printf("%25sMasukkan alamat penghuni:", "")
-	fmt.Scan(&penghuniBaru.Alamat)
-	fmt.Printf("%25sMasukkan tanggal masuk penghuni (YYYY-MM-DD):", "")
-	fmt.Scan(&penghuniBaru.TanggalMasuk)
-	fmt.Printf("%25sMasukkan jenis kamar penghuni:", "")
-	fmt.Scan(&penghuniBaru.JenisKamar)
-	fmt.Printf("%25sDurasi sewa:", "")
-	fmt.Scan(&penghuniBaru.LamaSewa)
-	fmt.Printf("%25sJumlah uang yang dibayarkan:", "")
-	fmt.Scan(&penghuniBaru.Pembayaran)
+    fmt.Printf("%25sMasukkan nomor identitas penghuni:", "")
+    fmt.Scan(&penghuniBaru.NomorIdentitas)
+    fmt.Printf("%25sMasukkan nomor telepon penghuni:", "")
+    fmt.Scan(&penghuniBaru.NomorTelepon)
+    fmt.Printf("%25sMasukkan alamat penghuni:", "")
+    fmt.Scan(&penghuniBaru.Alamat)
+    fmt.Printf("%25sMasukkan tanggal masuk penghuni (DD-MM-YY):", "")
+    fmt.Scan(&penghuniBaru.TanggalMasuk)
+    fmt.Printf("%25sMasukkan jenis kamar penghuni:", "")
+    fmt.Scan(&penghuniBaru.JenisKamar)
+    fmt.Printf("%25sDurasi sewa perbulan:", "")
+    fmt.Scan(&penghuniBaru.LamaSewa)
+    fmt.Printf("%25sJumlah uang yang dibayarkan:", "")
+    fmt.Scan(&penghuniBaru.Pembayaran)
 
-	// Find the price of the room
-	var hargakamar float64
-	for i := 0; i < numKamar; i++ {
+    // Temukan harga kamar
+	var hargaKamar float64
+	kamarFound := false
+	for i := 0; i < numKamar && !kamarFound; i++ {
 		if kamar[i].NomorKamar == penghuniBaru.NomorKamar {
-			hargakamar = kamar[i].Harga
+			hargaKamar = kamar[i].Harga
 			kamar[i].Status = penghuniBaru.Nama
-			break
+			kamarFound = true
 		}
 	}
+	
 
-	penghuniBaru.Total = int(hargakamar) * penghuniBaru.LamaSewa
-	penghuniBaru.Lunas = false
+    penghuniBaru.Total = int(hargaKamar) * penghuniBaru.LamaSewa
+    penghuniBaru.Lunas = false
 
-	penghuni[numPenghuni] = penghuniBaru
-	numPenghuni++
-	fmt.Printf("%25sPenghuni berhasil didata.\n", "")
-	exit()
+    penghuni[numPenghuni] = penghuniBaru
+    numPenghuni++
+    clearScreen()
+    setGreenText()
+    fmt.Print("Penghuni berhasil didata.\n", "")
+    exit()
 }
 
 
 func inputDataKamar() {
 	clearScreen()
 	setGreenText()
-	fmt.Printf("%25s$$$$$$\\                                 $$\\           $$$$$$$\\             $$\\                     $$\\   $$\\                                            \n", "")
-	fmt.Printf("%25s\\_$$  _|                                $$ |          $$  __$$\\            $$ |                    $$ | $$  |                                           \n", "")
-	fmt.Printf("%25s  $$ |  $$$$$$$\\   $$$$$$\\  $$\\   $$\\ $$$$$$\\         $$ |  $$ | $$$$$$\\ $$$$$$\\    $$$$$$\\        $$ |$$  / $$$$$$\\  $$$$$$\\$$$$\\   $$$$$$\\   $$$$$$\\  \n", "")
-	fmt.Printf("%25s  $$ |  $$  __$$\\ $$  __$$\\ $$ |  $$ |\\_$$  _|        $$ |  $$ | \\____$$\\\\_$$  _|   \\____$$\\       $$$$$  /  \\____$$\\ $$  _$$  _$$\\  \\____$$\\ $$  __$$\\ \n", "")
-	fmt.Printf("%25s  $$ |  $$ |  $$ |$$ /  $$ |$$ |  $$ |  $$ |          $$ |  $$ | $$$$$$$ | $$ |     $$$$$$$ |      $$  $$<   $$$$$$$ |$$ / $$ / $$ | $$$$$$$ |$$ |  \\__|\n", "")
-	fmt.Printf("%25s  $$ |  $$ |  $$ |$$ |  $$ |$$ |  $$ |  $$ |$$\\       $$ |  $$ |$$  __$$ | $$ |$$\\ $$  __$$ |      $$ |\\$$\\ $$  __$$ |$$ | $$ | $$ |$$  __$$ |$$ |      \n", "")
-	fmt.Printf("%25s$$$$$$\\ $$ |  $$ |$$$$$$$  |\\$$$$$$  |  \\$$$$  |      $$$$$$$  |\\$$$$$$$ | \\$$$$  |\\$$$$$$$ |      $$ | \\$$\\$$$$$$$ |$$ | $$ | $$ |\\$$$$$$$ |$$ |      \n", "")
-	fmt.Printf("%25s\\______|\\__|  \\__|$$  ____/  \\______/    \\____/       \\_______/  \\_______|  \\____/  \\_______|      \\__|  \\__|\\_______|\\__| \\__| \\__| \\_______|\\__|      \n", "")
-	fmt.Printf("%25s                  $$ |                                                                                                                                  \n", "")
-	fmt.Printf("%25s                  $$ |                                                                                                                                  \n", "")
-	fmt.Printf("%25s                  \\__|                                                                                                                                  \n", "")
+	header("kamar")
+	
 
 
 	var kamarBaru Kamar
@@ -265,80 +351,82 @@ func inputDataKamar() {
 	
 	kamar[numKamar] = kamarBaru
 	numKamar++
+	clearScreen()
+	setGreenText()
 	fmt.Println("Data kamar berhasil dimasukkan.")
 	exit()
 }
 
 func pencarianDataKamar() {
-	clearScreen()
-	setGreenText()
-	fmt.Printf("%25s\n", "$$$$$$$\\                                                   $$\\                           $$$$$$$\\             $$\\                     $$\\   $$\\                                            ")
-	fmt.Printf("%25s\n", "$$  __$$\\                                                  \\__|                          $$  __$$\\            $$ |                    $$ | $$  |                                           ")
-	fmt.Printf("%25s\n", "$$ |  $$ | $$$$$$\\  $$$$$$$\\   $$$$$$$\\ $$$$$$\\   $$$$$$\\  $$\\  $$$$$$\\  $$$$$$$\\        $$ |  $$ | $$$$$$\\ $$$$$$\\    $$$$$$\\        $$ |$$  / $$$$$$\\  $$$$$$\\$$$$\\   $$$$$$\\   $$$$$$\\  ")
-	fmt.Printf("%25s\n", "$$$$$$$  |$$  __$$\\ $$  __$$\\ $$  _____|\\____$$\\ $$  __$$\\ $$ | \\____$$\\ $$  __$$\\       $$ |  $$ | \\____$$\\\\_$$  _|   \\____$$\\       $$$$$  /  \\____$$\\ $$  _$$  _$$\\  \\____$$\\ $$  __$$\\ ")
-	fmt.Printf("%25s\n", "$$  ____/ $$$$$$$$ |$$ |  $$ |$$ /      $$$$$$$ |$$ |  \\__|$$ | $$$$$$$ |$$ |  $$ |      $$ |  $$ | $$$$$$$ | $$ |     $$$$$$$ |      $$  $$<   $$$$$$$ |$$ / $$ / $$ | $$$$$$$ |$$ |  \\__|")
-	fmt.Printf("%25s\n", "$$ |      $$   ____|$$ |  $$ |$$ |     $$  __$$ |$$ |      $$ |$$  __$$ |$$ |  $$ |      $$ |  $$ |$$  __$$ | $$ |$$\\ $$  __$$ |      $$ |\\$$\\ $$  __$$ |$$ | $$ | $$ |$$  __$$ |$$ |      ")
-	fmt.Printf("%25s\n", "$$ |      \\$$$$$$$\\ $$ |  $$ |\\$$$$$$$\\\\$$$$$$$ |$$ |      $$ |\\$$$$$$$ |$$ |  $$ |      $$$$$$$  |\\$$$$$$$ | \\$$$$  |\\$$$$$$$ |      $$ | \\$$\\\\$$$$$$$ |$$ | $$ | $$ |\\$$$$$$$ |$$ |      ")
-	fmt.Printf("%25s\n", "\\__|       \\_______|\\__|  \\__| \\_______|\\_______|\\__|      \\__| \\_______|\\__|  \\__|      \\_______/  \\_______|  \\____/  \\_______|      \\__|  \\__|\\_______|\\__| \\__| \\__| \\_______|\\__|      ")
+    clearScreen()
+    setGreenText()
+    header("carikamar")
 
+    var nomorKamarDicari int
+    ketemu := false
+    fmt.Println()
+    fmt.Println("Masukkan nomor kamar yang ingin dicari:")
+    fmt.Scan(&nomorKamarDicari)
 
-		
-	var nomorKamarDicari int
-	ketemu := false
-	fmt.Println()
-	fmt.Println("Masukkan nomor kamar yang ingin dicari:")
-	fmt.Scan(&nomorKamarDicari)
+    for i := 0; i < numKamar && !ketemu; i++ {
+        if kamar[i].NomorKamar == nomorKamarDicari {
+            ketemu = true
+            fmt.Printf("Kamar dengan nomor %d ditemukan.\n", nomorKamarDicari)
+            fmt.Printf("Tipe: %s, Harga: %.2f, Status: %s\n", kamar[i].Tipe, kamar[i].Harga, kamar[i].Status)
+            fmt.Print("Fasilitas: ")
+            for j := 0; j < 5; j++ {
+                if kamar[i].Fasilitas[j] != "" {
+                    fmt.Printf("%s ", kamar[i].Fasilitas[j])
+                }
+            }
+            fmt.Println()
+        }
+    }
 
-	for i := 0; i < numKamar; i++ {
-		if kamar[i].NomorKamar == nomorKamarDicari {
-			ketemu = true
-			fmt.Printf("Kamar dengan nomor %d ditemukan.\n", nomorKamarDicari)
-			fmt.Printf("Tipe: %s, Harga: %.2f, Status: %s\n", kamar[i].Tipe, kamar[i].Harga, kamar[i].Status)
-			fmt.Print("Fasilitas: ")
-			for j := 0; j < 5; j++ {
-				if kamar[i].Fasilitas[j] != "" {
-					fmt.Printf("%s ", kamar[i].Fasilitas[j])
-				}
-			}
-			fmt.Println()
-			break
-		}
-	}
-
-	if !ketemu {
-		fmt.Printf("Kamar dengan nomor %d tidak ditemukan.\n", nomorKamarDicari)
-	}
-	exit()
+    if !ketemu {
+        clearScreen()
+        setGreenText()
+        fmt.Printf("Kamar dengan nomor %d tidak ditemukan.\n", nomorKamarDicari)
+    }
+    exit()
 }
-func pencarianDataPenghuni() {	
-	var nomorKamarDicari int
-	ketemu := false
-	fmt.Println()
-	fmt.Println("Masukkan nomor kamar yang ingin dicari:")
-	fmt.Scan(&nomorKamarDicari)
 
-	for i := 0; i < numPenghuni; i++ {
-		if penghuni[i].NomorKamar == nomorKamarDicari {
-			ketemu = true
-			fmt.Printf("Penghuni dengan nomor kamar %d ditemukan.\n", nomorKamarDicari)
-			fmt.Printf("Nama: %s\n", penghuni[i].Nama)
-			fmt.Printf("Nomor Identitas: %d\n", penghuni[i].NomorIdentitas)
-			fmt.Printf("Nomor Telepon: %s\n", penghuni[i].NomorTelepon)
-			fmt.Printf("Alamat: %s\n", penghuni[i].Alamat)
-			fmt.Printf("Tanggal Masuk: %s\n", penghuni[i].TanggalMasuk)
-			fmt.Printf("Jenis Kamar: %s\n", penghuni[i].JenisKamar)
-			fmt.Printf("Lama Sewa: %d\n", penghuni[i].LamaSewa)
-			fmt.Printf("Pembayaran: %d\n", penghuni[i].Pembayaran)
-			fmt.Printf("Total: %d\n", penghuni[i].Total)
-			fmt.Printf("Lunas: %t\n", penghuni[i].Lunas)
-			break
-		}
-	}
-	if !ketemu {
-		fmt.Printf("Penghuni dengan nomor kamar %d tidak ditemukan.\n", nomorKamarDicari)
-	}
-	exit()
+func pencarianDataPenghuni() {    
+    clearScreen()
+    setGreenText()
+    header("caripenghuni")
+
+    var nomorKamarDicari int
+    ketemu := false
+    fmt.Println()
+    fmt.Println("Masukkan nomor kamar yang ingin dicari:")
+    fmt.Scan(&nomorKamarDicari)
+
+    for i := 0; i < numPenghuni; i++ {
+        if penghuni[i].NomorKamar == nomorKamarDicari {
+            ketemu = true
+            fmt.Printf("Penghuni dengan nomor kamar %d ditemukan.\n", nomorKamarDicari)
+            fmt.Printf("Nama: %s\n", penghuni[i].Nama)
+            fmt.Printf("Nomor Identitas: %d\n", penghuni[i].NomorIdentitas)
+            fmt.Printf("Nomor Telepon: %s\n", penghuni[i].NomorTelepon)
+            fmt.Printf("Alamat: %s\n", penghuni[i].Alamat)
+            fmt.Printf("Tanggal Masuk: %s\n", penghuni[i].TanggalMasuk)
+            fmt.Printf("Jenis Kamar: %s\n", penghuni[i].JenisKamar)
+            fmt.Printf("Lama Sewa: %d\n", penghuni[i].LamaSewa)
+            fmt.Printf("Pembayaran: %d\n", penghuni[i].Pembayaran)
+            fmt.Printf("Total: %d\n", penghuni[i].Total)
+            fmt.Printf("Lunas: %t\n", penghuni[i].Lunas)
+        }
+    }
+
+    if !ketemu {
+        clearScreen()
+        setGreenText()
+        fmt.Printf("Penghuni dengan nomor kamar %d tidak ditemukan.\n", nomorKamarDicari)
+    }
+    exit()
 }
+
 func cekKetersediaanKamar(no int) bool {
 	for i := 0; i < numKamar; i++ {
 		if kamar[i].NomorKamar == no && kamar[i].Status == penghuni[i].Nama {
@@ -349,162 +437,147 @@ func cekKetersediaanKamar(no int) bool {
 }
 
 func pembayaran() {
-	clearScreen()
-	setGreenText()
-	fmt.Printf("%25s\n", "$$$$$$$\\                                                   $$\\                           $$$$$$$\\             $$\\                     $$\\   $$\\                                            ")
-	fmt.Printf("%25s\n", "$$  __$$\\                                                  \\__|                          $$  __$$\\            $$ |                    $$ | $$  |                                           ")
-	fmt.Printf("%25s\n", "$$ |  $$ | $$$$$$\\  $$$$$$$\\   $$$$$$$\\ $$$$$$\\   $$$$$$\\  $$\\  $$$$$$\\  $$$$$$$\\        $$ |  $$ | $$$$$$\\ $$$$$$\\    $$$$$$\\        $$ |$$  / $$$$$$\\  $$$$$$\\$$$$\\   $$$$$$\\   $$$$$$\\  ")
-	fmt.Printf("%25s\n", "$$$$$$$$  |$$  __$$\\ $$  __$$\\ $$  _____|\\____$$\\ $$  __$$\\ $$ | \\____$$\\ $$  __$$\\       $$ |  $$ | \\____$$\\\\_$$  _|   \\____$$\\       $$$$$  /  \\____$$\\ $$  _$$  _$$\\  \\____$$\\ $$  __$$\\ ")
-	fmt.Printf("%25s\n", "$$  ____/ $$$$$$$$ |$$ |  $$ |$$ /      $$$$$$$ |$$ |  \\__|$$ | $$$$$$$ |$$ |  $$ |      $$ |  $$ | $$$$$$$ | $$ |     $$$$$$$ |      $$  $$<   $$$$$$$ |$$ / $$ / $$ | $$$$$$$ |$$ |  \\__|")
-	fmt.Printf("%25s\n", "$$ |      $$   ____|$$ |  $$ |$$ |     $$  __$$ |$$ |      $$ |$$  __$$ |$$ |  $$ |      $$ |  $$ |$$  __$$ | $$ |$$\\ $$  __$$ |      $$ |\\$$\\ $$  __$$ |$$ | $$ | $$ |$$  __$$ |$$ |      ")
-	fmt.Printf("%25s\n", "$$ |      \\$$$$$$$\\ $$ |  $$ |\\$$$$$$$\\\\$$$$$$$ |$$ |      $$ |\\$$$$$$$ |$$ |  $$ |      $$$$$$$  |\\$$$$$$$ | \\$$$$  |\\$$$$$$$ |      $$ | \\$$\\$$$$$$$ |$$ | $$ | $$ |\\$$$$$$$ |$$ |      ")
-	fmt.Printf("%25s\n", "\\__|       \\_______|\\__|  \\__| \\_______|\\_______|\\__|      \\__| \\_______|\\__|  \\__|      \\_______/  \\_______|  \\____/  \\_______|      \\__|  \\__|\\_______|\\__| \\__| \\__| \\_______|\\__|      ")
+    clearScreen()
+    setGreenText()
+    header("pembayaran")
 
-	var nama string
-	var bayar int
-	var found bool = false
-	fmt.Print("Nama penghuni yang akan melakukan pembayaran: ")
-	fmt.Scan(&nama)
+    var n int
+    var bayar int
+    var found bool = false
+    var index int // Menyimpan indeks penghuni yang ditemukan
+    fmt.Print("Masukan nomor kamar yang akan melakukan pembayaran: ")
+    fmt.Scan(&n)
 
-	for i := 0; i < numPenghuni; i++ {
-		if penghuni[i].Nama == nama {
-			fmt.Println("Sisa uang yang belum dibayarkan:", penghuni[i].Total-penghuni[i].Pembayaran)
-			fmt.Print("Jumlah uang yang dibayarkan: ")
-			fmt.Scan(&bayar)
-			penghuni[i].Pembayaran += bayar
-			found = true
-			if penghuni[i].Pembayaran >= penghuni[i].Total {
-				penghuni[i].Lunas = true
-				fmt.Println("Pembayaran sudah lunas")
-				for j := i; j < numPenghuni-1; j++ {
-					penghuni[j] = penghuni[j+1]
-				}
-				numPenghuni--
-			} else {
-				fmt.Println("Sisa uang yang belum dibayarkan:", penghuni[i].Total-penghuni[i].Pembayaran)
-			}
-			break
-		}
-	}
-	if !found {
-		fmt.Println("Tidak ditemukan penghuni dengan nama tersebut.")
-	}
-	var keluar string
-    fmt.Println("\nTekan 1 lalu enter untuk kembali ke menu utama...")
-    fmt.Scan(&keluar)
-	if keluar=="1"{
-		menu()
-	}
-	exit()
-	
+    for i := 0; i < numPenghuni && !found; i++ {
+        if kamar[i].NomorKamar == n {
+            index = i 
+            found = true
+        }
+    }
+
+    if found {
+        fmt.Println("Sisa uang yang belum dibayarkan:", penghuni[index].Total-penghuni[index].Pembayaran)
+        fmt.Print("Jumlah uang yang dibayarkan: ")
+        fmt.Scan(&bayar)
+        penghuni[index].Pembayaran += bayar
+
+        if penghuni[index].Pembayaran >= penghuni[index].Total {
+            penghuni[index].Lunas = true
+            for j := index; j < numPenghuni-1; j++ {
+                penghuni[j] = penghuni[j+1]
+            }
+            numPenghuni--
+			clearScreen()
+            fmt.Println("Pembayaran sudah lunas")
+        } else {
+            fmt.Println("Sisa uang yang belum dibayarkan:", penghuni[index].Total-penghuni[index].Pembayaran)
+        }
+    } else {
+        fmt.Println("Tidak ditemukan kamar dengan nomor tersebut.")
+    }
+
+   
+    exit()
 }
+
 
 
 func editDataKamar() {
-	clearScreen()
-	setGreenText()
-	fmt.Printf("%25s\n", " /$$$$$$$$       /$$ /$$   /$$           /$$$$$$$              /$$                     /$$   /$$                                             ")
-	fmt.Printf("%25s\n", "| $$_____/      | $$|__/  | $$          | $$__  $$            | $$                    | $$  /$$/                                             ")
-	fmt.Printf("%25s\n", "| $$        /$$$$$$$ /$$ /$$$$$$        | $$  \\ $$  /$$$$$$  /$$$$$$    /$$$$$$       | $$ /$$/   /$$$$$$  /$$$$$$/$$$$   /$$$$$$   /$$$$$$ ")
-	fmt.Printf("%25s\n", "| $$$$$    /$$__  $$| $$|_  $$_/        | $$  | $$ |____  $$|_  $$_/   |____  $$      | $$$$$/   |____  $$| $$_  $$_  $$ |____  $$ /$$__  $$")
-	fmt.Printf("%25s\n", "| $$__/   | $$  | $$| $$  | $$          | $$  | $$  /$$$$$$$  | $$      /$$$$$$$      | $$  $$    /$$$$$$$| $$ \\ $$ \\ $$  /$$$$$$$| $$  \\__/")
-	fmt.Printf("%25s\n", "| $$      | $$  | $$| $$  | $$ /$$      | $$  | $$ /$$__  $$  | $$ /$$ /$$__  $$      | $$\\  $$  /$$__  $$| $$ | $$ | $$ /$$__  $$| $$      ")
-	fmt.Printf("%25s\n", "| $$$$$$$$|  $$$$$$$| $$  |  $$$$/      | $$$$$$$/|  $$$$$$$  |  $$$$/|  $$$$$$$      | $$ \\  $$|  $$$$$$$| $$ | $$ | $$|  $$$$$$$| $$      ")
-	fmt.Printf("%25s\n", "|________/ \\_______/|__/   \\___/        |_______/  \\_______/   \\___/   \\_______/      |__/  \\__/ \\_______/|__/ |__/ |__/ \\_______/|__/      ")
+    clearScreen()
+    setGreenText()
+    header("editkamar")
 
+    var nomorKamar int
+    fmt.Printf("%25sMasukkan nomor kamar yang ingin diedit:","")
+    fmt.Scan(&nomorKamar)
 
-		var nomorKamar int
-		fmt.Printf("%25s\n", "Masukkan nomor kamar yang ingin diedit:")
-		fmt.Scan(&nomorKamar)
-		
-		ketemu := false
-		for i := 0; i < numKamar; i++ {
-			if kamar[i].NomorKamar == nomorKamar {
-				ketemu = true
-				var tipeBaru string
-				var hargaBaru float64
-				var fasilitasBaru string
-		
-				fmt.Printf("%25s\n", "Masukkan tipe kamar baru:")
-				fmt.Scan(&tipeBaru)
-				fmt.Printf("%25s\n", "Masukkan harga sewa per bulan baru:")
-				fmt.Scan(&hargaBaru)
-				fmt.Printf("%25s\n", "Masukkan fasilitas kamar baru (pisahkan dengan spasi, ketik '.' untuk selesai):")
-		
-				j := 0
-				kamar[i].Fasilitas = [NMAX]string{}
-				for {
-					fmt.Scan(&fasilitasBaru)
-					if fasilitasBaru == "." {
-						break
-					}
-					kamar[i].Fasilitas[j] = fasilitasBaru
-					j++
-				}
-		
-				kamar[i].Tipe = tipeBaru
-				kamar[i].Harga = hargaBaru
-		
-				fmt.Println("Data kamar berhasil diupdate.")
-			}
-		}
+    ketemu := false
+    for i := 0; i < numKamar; i++ {
+        if kamar[i].NomorKamar == nomorKamar {
+            ketemu = true
+            var tipeBaru string
+            var hargaBaru float64
+            var fasilitasBaru string
+            var fasilitasSelesai bool 
 
-	if !ketemu {
-		fmt.Printf("Kamar dengan nomor %d tidak ditemukan.\n", nomorKamar)
-	}
-	exit()
+            fmt.Printf("%25sMasukkan tipe kamar baru:","")
+            fmt.Scan(&tipeBaru)
+            fmt.Printf("%25sMasukkan harga sewa per bulan baru:","")
+            fmt.Scan(&hargaBaru)
+            fmt.Printf("%25sMasukkan fasilitas kamar baru (pisahkan dengan spasi, ketik '.' untuk selesai):","")
+
+            j := 0
+            kamar[i].Fasilitas = [NMAX]string{}
+            for !fasilitasSelesai {
+                fmt.Scan(&fasilitasBaru)
+                if fasilitasBaru == "." {
+                    fasilitasSelesai = true
+                } else {
+                    kamar[i].Fasilitas[j] = fasilitasBaru
+                    j++
+                }
+            }
+
+            kamar[i].Tipe = tipeBaru
+            kamar[i].Harga = hargaBaru
+			clearScreen()
+    		setGreenText()
+
+            fmt.Printf("%25sData kamar berhasil diupdate.","")
+        }
+    }
+
+    if !ketemu {
+		clearScreen()
+    	setGreenText()
+        fmt.Printf("Kamar dengan nomor %d tidak ditemukan.\n", nomorKamar)
+    }
+    exit()
 }
+
+
 
 func hapusDataKamar() {
-	clearScreen()
-	setGreenText()
-	width := 80
-	fmt.Println(strings.Repeat("═", width))
-	printCentered("Hapus Data Kamar", width)
-	fmt.Println(strings.Repeat("═", width))
-	resetTextColor()
+    clearScreen()
+    setGreenText()
+    header("hapuskamar")
 
-	var nomorKamar int
-	fmt.Println("Masukkan nomor kamar yang ingin dihapus:")
-	fmt.Scan(&nomorKamar)
+    var nomorKamar int
+    fmt.Printf("%25s\n", "Masukkan nomor kamar yang ingin dihapus:")
+    fmt.Scan(&nomorKamar)
 
-	ketemu := false
-	for i := 0; i < numKamar; i++ {
-		if kamar[i].NomorKamar == nomorKamar {
-			ketemu = true
-			for j := i; j < numKamar-1; j++ {
-				kamar[j] = kamar[j+1]
-			}
-			numKamar--
-			fmt.Println("Data kamar berhasil dihapus.")
-			break
-		}
-	}
+    ketemu := false
+    for i := 0; i < numKamar; i++ {
+        if kamar[i].NomorKamar == nomorKamar {
+            ketemu = true
+            for j := i; j < numKamar-1; j++ {
+                kamar[j] = kamar[j+1]
+            }
+            clearScreen()
+            setGreenText()
+            numKamar--
+            fmt.Println("Data kamar berhasil dihapus.")
+        }
+    }
 
-	if !ketemu {
-		fmt.Printf("Kamar dengan nomor %d tidak ditemukan.\n", nomorKamar)
-	}
-	exit()
+    if !ketemu {
+        clearScreen()
+        setGreenText()
+        fmt.Printf("Kamar dengan nomor %d tidak ditemukan.\n", nomorKamar)
+    }
+    exit()
 }
+
 	
 
 
 func editDataPenghuni() {
 	clearScreen()
 	setGreenText()
-	fmt.Printf("%25s\n", " /$$$$$$$$       /$$ /$$   /$$           /$$$$$$$              /$$                     /$$$$$$$                               /$$                           /$$")
-	fmt.Printf("%25s\n", "| $$_____/      | $$|__/  | $$          | $$__  $$            | $$                    | $$__  $$                             | $$                          |__/")
-	fmt.Printf("%25s\n", "| $$        /$$$$$$$ /$$ /$$$$$$        | $$  \\ $$  /$$$$$$  /$$$$$$    /$$$$$$       | $$  \\ $$ /$$$$$$  /$$$$$$$   /$$$$$$ | $$$$$$$  /$$   /$$ /$$$$$$$  /$$")
-	fmt.Printf("%25s\n", "| $$$$$    /$$__  $$| $$|_  $$_/        | $$  | $$ |____  $$|_  $$_/   |____  $$      | $$$$$$$//$$__  $$| $$__  $$ /$$__  $$| $$__  $$| $$  | $$| $$__  $$| $$")
-	fmt.Printf("%25s\n", "| $$__/   | $$  | $$| $$  | $$          | $$  | $$  /$$$$$$$  | $$      /$$$$$$$      | $$____/| $$$$$$$$| $$  \\ $$| $$  \\ $$| $$  \\ $$| $$  | $$| $$  \\ $$| $$")
-	fmt.Printf("%25s\n", "| $$      | $$  | $$| $$  | $$ /$$      | $$  | $$ /$$__  $$  | $$ /$$ /$$__  $$      | $$     | $$_____/| $$  | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$| $$")
-	fmt.Printf("%25s\n", "| $$$$$$$$|  $$$$$$$| $$  |  $$$$/      | $$$$$$$/|  $$$$$$$  |  $$$$/|  $$$$$$$      | $$     |  $$$$$$$| $$  | $$|  $$$$$$$| $$  | $$|  $$$$$$/| $$  | $$| $$")
-	fmt.Printf("%25s\n", "|________/ \\_______/|__/   \\___/        |_______/  \\_______/   \\___/   \\_______/      |__/      \\_______/|__/  |__/ \\____  $$|__/  |__/ \\______/ |__/  |__/|__/")
-	fmt.Printf("%25s\n", "                                                                                                                    /$$  \\ $$                                  ")
-	fmt.Printf("%25s\n", "                                                                                                                   |  $$$$$$/                             buat ini juga")
+	header("editpenghuni")
 
 	var nomorKamar int
-	fmt.Println("Masukkan nomor kamar penghuni yang ingin diedit:")
+	fmt.Print("Masukkan nomor kamar penghuni yang ingin diedit:")
 	fmt.Scan(&nomorKamar)
 
 	ketemu := false
@@ -515,24 +588,38 @@ func editDataPenghuni() {
 			var alamatBaru string
 			var tanggalMasukBaru string
 			var jenisKamarBaru string
-			fmt.Println("Masukkan nama penghuni baru:")
-			fmt.Scan(&namaBaru)
-			fmt.Println("Masukkan alamat penghuni baru:")
+			var namaDepanpenghuni string
+			var namaBelakangpenghuni string
+			
+			var namaPenghuni string
+			namaDepanpenghuni=" "
+			namaBelakangpenghuni=" "
+			fmt.Printf("%25sMasukkan nama depan penghuni :", "")
+			fmt.Scan(&namaDepanpenghuni)
+			fmt.Printf("%25sMasukkan nama belakang penghuni :", "")
+			fmt.Scan(&namaBelakangpenghuni)
+			namaPenghuni=namaDepanpenghuni+" "+namaBelakangpenghuni
+			namaBaru=namaPenghuni
+			fmt.Printf("%25sMasukkan alamat penghuni baru:","")
 			fmt.Scan(&alamatBaru)
-			fmt.Println("Masukkan tanggal masuk penghuni baru:")
+			fmt.Printf("%25sMasukkan tanggal masuk penghuni baru DDD-MMM-YY:","")
 			fmt.Scan(&tanggalMasukBaru)
-			fmt.Println("Masukkan jenis kamar penghuni baru:")
+			fmt.Printf("%25sMasukkan jenis kamar penghuni baru:","")
 			fmt.Scan(&jenisKamarBaru)
 			penghuni[i].Nama = namaBaru
 			penghuni[i].Alamat = alamatBaru
 			penghuni[i].TanggalMasuk = tanggalMasukBaru
 			penghuni[i].JenisKamar = jenisKamarBaru
-
-			fmt.Println("Data penghuni berhasil diupdate.")
-			break
+			kamar[i].Status=namaBaru
+		
+			clearScreen()
+			setGreenText()
+			fmt.Print("Data penghuni berhasil diupdate.")
+			exit()
 		}
 	}
-
+	clearScreen()
+	setGreenText()
 	if !ketemu {
 		fmt.Printf("Tidak ada penghuni yang tinggal di kamar dengan nomor %d.\n", nomorKamar)
 	}
@@ -540,86 +627,93 @@ func editDataPenghuni() {
 }
 
 func hapusDataPenghuni() {
-	clearScreen()
-	setGreenText()
-	width := 80
-	fmt.Println(strings.Repeat("═", width))
-	printCentered("Hapus Data Penghuni", width)
-	fmt.Println(strings.Repeat("═", width))
+    clearScreen()
+    setGreenText()
+    header("hapuspenghuni")
 
-	var nomorKamar int
-	ketemu := false
-	for i := 0; i < numPenghuni; i++ {
-		if penghuni[i].NomorKamar == nomorKamar {
-			ketemu = true
-			for j := 0; j < numKamar; j++ {
-				if kamar[j].NomorKamar == nomorKamar {
-					kamar[j].Status = "tersedia"
-					break
-				}
-			}
-			for j := i; j < numPenghuni-1; j++ {
-				penghuni[j] = penghuni[j+1]
-			}
-			numPenghuni--
-			fmt.Println("Data penghuni berhasil dihapus.")
-			break
-		}
-	}
+    var nomorKamar int
+    ketemu := false
+    fmt.Printf("%25s\n", "Masukkan nomor kamar yang ingin dihapus:")
+    fmt.Scan(&nomorKamar)
 
-	if !ketemu {
-		fmt.Printf("Tidak ada penghuni yang tinggal di kamar dengan nomor %d.\n", nomorKamar)
-	}
-	exit()
+    for i := 0; i < numPenghuni; i++ {
+        if penghuni[i].NomorKamar == nomorKamar {
+            ketemu = true
+            for j := 0; j < numKamar; j++ {
+                if kamar[j].NomorKamar == nomorKamar {
+                    kamar[j].Status = "tersedia"
+                }
+            }
+            for j := i; j < numPenghuni-1; j++ {
+                penghuni[j] = penghuni[j+1]
+            }
+            clearScreen()
+            setGreenText()
+            numPenghuni--
+            fmt.Printf("%25s\n", "Data penghuni berhasil dihapus.")
+            exit()
+        }
+    }
+
+    if !ketemu {
+        clearScreen()
+        setGreenText()
+        fmt.Printf("Kamar dengan nomor %d tidak ditemukan.\n", nomorKamar)
+    }
+    exit()
 }
+
 
 func tampilkanDataPenghuni() {
 	clearScreen()
 	setGreenText()
-	width := 80
-	fmt.Println(strings.Repeat("═", width))
-	printCentered("Tampilkan Data Penghuni", width)
-	fmt.Println(strings.Repeat("═", width))
-	fmt.Println("==========================================================================================================================================================")
-	fmt.Printf("| %-20s | %-10s | %-15s | %-15s | %-50s | %-15s | %-15s |\n", "Nama", "No. Kamar", "No. Identitas", "Alamat", "No telpon", "Tanggal Masuk", "Jenis Kamar")
-	fmt.Println("==========================================================================================================================================================")
-	for i := 0; i < numPenghuni; i++ {
-		fmt.Printf("| %-20s | %-10d | %-15d | %-15s | %-50s | %-15s | %-20s |\n", penghuni[i].Nama, penghuni[i].NomorKamar, penghuni[i].NomorIdentitas, penghuni[i].NomorTelepon, penghuni[i].Alamat, penghuni[i].TanggalMasuk, penghuni[i].JenisKamar)
+	header("tampilpenghuni")
+	if numPenghuni == 0 {
+		fmt.Println("==========================================================================================================================================================")
+		fmt.Println("|                                                     Data penghuni masih kosong                                                                         |")
+		fmt.Println("==========================================================================================================================================================")
+	} else {
+		fmt.Println("==========================================================================================================================================================")
+		fmt.Printf("| %-20s | %-10s | %-15s | %-15s | %-50s | %-15s | %-15s |\n", "Nama", "No. Kamar", "No. Identitas", "No.Telepon", "Alamay", "Tanggal Masuk", "Jenis Kamar")
+		fmt.Println("==========================================================================================================================================================")
+		for i := 0; i < numPenghuni; i++ {
+			fmt.Printf("| %-20s | %-10d | %-15d | %-15s | %-50s | %-15s | %-15s |\n", penghuni[i].Nama, penghuni[i].NomorKamar, penghuni[i].NomorIdentitas, penghuni[i].NomorTelepon, penghuni[i].Alamat, penghuni[i].TanggalMasuk, penghuni[i].JenisKamar)
+		}
+		fmt.Println("===========================================================================================================================================================")
 	}
-	fmt.Println("===========================================================================================================================================================")
 	exit()
 }
 
 func tampilkanDataKamar() {
-    // Tampilkan data kamar
     clearScreen()
     setGreenText()
-    width := 80
-    fmt.Println(strings.Repeat("═", width))
-    printCentered("Tampilkan Data Kamar", width)
-    fmt.Println(strings.Repeat("═", width))
+    header("tampilkamar")
 
+    if numKamar == 0 {
+        fmt.Println("===================================================================================================")
+        fmt.Println("|                                       Data kamar masih kosong                                      |")
+        fmt.Println("===================================================================================================")
+    } else {
+        fmt.Println("===================================================================================================")
+        fmt.Printf("| %-10s | %-15s | %-10s | %-60s | %-10s |\n", "No. Kamar", "Tipe Kamar", "Harga", "Fasilitas", "Status")
+        fmt.Println("===================================================================================================")
 
-    fmt.Println("===================================================================================================")
-    fmt.Printf("| %-10s | %-15s | %-10s | %-60s | %-10s |\n", "No. Kamar", "Tipe Kamar", "Harga", "Fasilitas", "Status")
-    fmt.Println("===================================================================================================")
-    for i := 0; i < numKamar; i++ {
-        fasilitas := ""
-        for j := 0; j < len(kamar[i].Fasilitas); j++ {
-            if kamar[i].Fasilitas[j] != "" {
-                if j == 0 {
-                    fasilitas += kamar[i].Fasilitas[j]
-                } else {
-                    fasilitas += ", " + kamar[i].Fasilitas[j]
+        for i := 0; i < numKamar; i++ {
+            fasilitas := ""
+            for j := 0; j < len(kamar[i].Fasilitas); j++ {
+                if kamar[i].Fasilitas[j] != "" {
+                    if j == 0 {
+                        fasilitas += kamar[i].Fasilitas[j]
+                    } else {
+                        fasilitas += ", " + kamar[i].Fasilitas[j]
+                    }
                 }
             }
+            fmt.Printf("| %-10d | %-15s | %-10.2f | %-60s | %-10s |\n", kamar[i].NomorKamar, kamar[i].Tipe, kamar[i].Harga, fasilitas, kamar[i].Status)
         }
-        fmt.Printf("| %-10d | %-15s | %-10.2f | %-60s | %-10s |\n", kamar[i].NomorKamar, kamar[i].Tipe, kamar[i].Harga, fasilitas, kamar[i].Status)
+        fmt.Println("===================================================================================================")
     }
-    fmt.Println("===================================================================================================")
-	exit()
-
-    
-	
-	
+    exit()
 }
+
+
