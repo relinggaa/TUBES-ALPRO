@@ -73,12 +73,12 @@ func main() {
 }
 
 func menu() {
-	var tampilkandataKamar, tampilkanpenghuni, tampilkanpembayaran, hapuskamar, inputkamar, inputpenghuni, editkamar, editpenghuni, pencariankamar, hapuspenghuni bool
+	var tampilkandataKamar, tampilkanpenghuni, tampilkanpembayaran, hapuskamar, inputkamar, inputpenghuni, editkamar, editpenghuni, pencariankamar, hapuspenghuni, caripenghuni bool
 
 	for {
-		if !tampilkandataKamar && !tampilkanpenghuni && !tampilkanpembayaran &&!inputkamar&&!inputpenghuni&&!editkamar&& !editpenghuni &&!pencariankamar &&!hapuskamar&&!hapuspenghuni{
-            clearScreen()
-            setGreenText()
+		if !tampilkandataKamar && !tampilkanpenghuni && !tampilkanpembayaran &&!inputkamar&&!inputpenghuni&&!editkamar&& !editpenghuni &&!pencariankamar &&!hapuskamar&&!hapuspenghuni&&!caripenghuni{
+		clearScreen()
+		setGreenText()
 		fmt.Printf("%25s╔═════════════════════════════════════════════════════════════════════════╗\n", "")
 		fmt.Printf("%25s║%73s║\n", "", "")
 		fmt.Printf("%25s║%53s%-20s║\n", "", "Aplikasi Pengelolaan Kost", "")
@@ -91,14 +91,15 @@ func menu() {
 		fmt.Printf("%25s║%4s%-69s║\n", "", "", "1.Input Data Kamar")
 		fmt.Printf("%25s║%4s%-69s║\n", "", "", "2.Pendataan Penghuni")
 		fmt.Printf("%25s║%4s%-69s║\n", "", "", "3.Pencarian Data Kamar Dan Ketersedian Kamar")
-		fmt.Printf("%25s║%4s%-69s║\n", "", "", "4.Edit data kamar")
-		fmt.Printf("%25s║%4s%-69s║\n", "", "", "5.Edit data penghuni")
-		fmt.Printf("%25s║%4s%-69s║\n", "", "", "6.Hapus data kamar")
-		fmt.Printf("%25s║%4s%-69s║\n", "", "", "6.Hapus data penghuni")
-		fmt.Printf("%25s║%4s%-69s║\n", "", "", "8.Tampilkan data penghuni")
-		fmt.Printf("%25s║%4s%-69s║\n", "", "", "9.Tampilkan data kamar")
-		fmt.Printf("%25s║%4s%-69s║\n", "", "", "10.Pembayaran penghuni")
-		fmt.Printf("%25s║%4s%-69s║\n", "", "", "11. Keluar")
+		fmt.Printf("%25s║%4s%-69s║\n", "", "", "4.Pencarian Data Penghuni")
+		fmt.Printf("%25s║%4s%-69s║\n", "", "", "5.Edit data kamar")
+		fmt.Printf("%25s║%4s%-69s║\n", "", "", "6.Edit data penghuni")
+		fmt.Printf("%25s║%4s%-69s║\n", "", "", "7.Hapus data kamar")
+		fmt.Printf("%25s║%4s%-69s║\n", "", "", "8.Hapus data penghuni")
+		fmt.Printf("%25s║%4s%-69s║\n", "", "", "9.Tampilkan data penghuni")
+		fmt.Printf("%25s║%4s%-69s║\n", "", "", "10.Tampilkan data kamar")
+		fmt.Printf("%25s║%4s%-69s║\n", "", "", "11.Pembayaran penghuni")
+		fmt.Printf("%25s║%4s%-69s║\n", "", "", "12. Keluar")
 		fmt.Printf("%25s║%61s╔═══════════╣\n", "", "")
 		fmt.Printf("%25s║%73s║\n", "", "║ Menu Utama")
 		fmt.Printf("%25s╚═════════════════════════════════════════════════════════════════════════╝\n", "")
@@ -118,27 +119,30 @@ func menu() {
 			pencarianDataKamar()
 			pencariankamar=true
 		case 4:
+			pencarianDataPenghuni()
+			caripenghuni=true
+		case 5:
 			editDataKamar()
 			editkamar=true
-		case 5:
+		case 6:
 			editDataPenghuni()
 			editpenghuni=true
-		case 6:
+		case 7:
 			hapusDataKamar()
 			hapuskamar=true
-		case 7:
+		case 8:
 			hapusDataPenghuni()
 			hapuspenghuni=true
-		case 8:
+		case 9:
 			tampilkanDataPenghuni()
 			tampilkanpenghuni=true
-		case 9:
-			tampilkanDataKamar()
-			tampilkandataKamar = true 
 		case 10:
+			tampilkanDataKamar()
+			tampilkandataKamar=true
+		case 11:
 			pembayaran()
 			tampilkanpembayaran=true
-		case 11:
+		case 12:
 			fmt.Println("Terima kasih. Sampai jumpa!")
 			return
 		default:
@@ -306,7 +310,35 @@ func pencarianDataKamar() {
 	}
 	exit()
 }
+func pencarianDataPenghuni() {	
+	var nomorKamarDicari int
+	ketemu := false
+	fmt.Println()
+	fmt.Println("Masukkan nomor kamar yang ingin dicari:")
+	fmt.Scan(&nomorKamarDicari)
 
+	for i := 0; i < numPenghuni; i++ {
+		if penghuni[i].NomorKamar == nomorKamarDicari {
+			ketemu = true
+			fmt.Printf("Penghuni dengan nomor kamar %d ditemukan.\n", nomorKamarDicari)
+			fmt.Printf("Nama: %s\n", penghuni[i].Nama)
+			fmt.Printf("Nomor Identitas: %d\n", penghuni[i].NomorIdentitas)
+			fmt.Printf("Nomor Telepon: %s\n", penghuni[i].NomorTelepon)
+			fmt.Printf("Alamat: %s\n", penghuni[i].Alamat)
+			fmt.Printf("Tanggal Masuk: %s\n", penghuni[i].TanggalMasuk)
+			fmt.Printf("Jenis Kamar: %s\n", penghuni[i].JenisKamar)
+			fmt.Printf("Lama Sewa: %d\n", penghuni[i].LamaSewa)
+			fmt.Printf("Pembayaran: %d\n", penghuni[i].Pembayaran)
+			fmt.Printf("Total: %d\n", penghuni[i].Total)
+			fmt.Printf("Lunas: %t\n", penghuni[i].Lunas)
+			break
+		}
+	}
+	if !ketemu {
+		fmt.Printf("Penghuni dengan nomor kamar %d tidak ditemukan.\n", nomorKamarDicari)
+	}
+	exit()
+}
 func cekKetersediaanKamar(no int) bool {
 	for i := 0; i < numKamar; i++ {
 		if kamar[i].NomorKamar == no && kamar[i].Status == penghuni[i].Nama {
